@@ -11,8 +11,8 @@ export const getTrendingTv = async (req, res) => {
             currentCountry: 'US'
         },
         headers: {
-            'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-            'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+            'x-rapidapi-key': ENV_VARS.key,
+            'x-rapidapi-host': ENV_VARS.host
         }
     };
 
@@ -35,8 +35,8 @@ export const getTvTrailers = async (req, res) => {
             tconst: 'tt0120338'
         },
         headers: {
-            'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-            'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+            'x-rapidapi-key': ENV_VARS.key,
+            'x-rapidapi-host': ENV_VARS.host
         }
     };
     try {
@@ -59,8 +59,8 @@ export const getTvDetails = async (req, res) => {
             currentCountry: 'US'
         },
         headers: {
-            'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-            'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+            'x-rapidapi-key': ENV_VARS.key,
+            'x-rapidapi-host': ENV_VARS.host
         }
     };
     try {

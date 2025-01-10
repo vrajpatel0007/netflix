@@ -8,8 +8,8 @@ export const searchPerson = async (req, res) => {
           nconst: 'nm0001667'
         },
         headers: {
-          'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-          'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+          'x-rapidapi-key': ENV_VARS.key,
+          'x-rapidapi-host': ENV_VARS.host
         }
       };
       try {
@@ -27,8 +27,8 @@ export const searchMovie = async (req, res) => {
         method: 'GET',
         url: 'https://imdb8.p.rapidapi.com/title/get-top-rated-movies',
         headers: {
-          'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-          'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+          'x-rapidapi-key': ENV_VARS.key,
+          'x-rapidapi-host': ENV_VARS.host
         }
       };
       
@@ -54,8 +54,8 @@ export const searchTv = async (req, res) => {
         language: 'en-US'
       },
       headers: {
-        'x-rapidapi-key': '06dd3d8181msh9922031bf5a0425p14476ejsn9788cc426d01',
-        'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+        'x-rapidapi-key': ENV_VARS.key,
+        'x-rapidapi-host': ENV_VARS.host
       }
     };
     try {

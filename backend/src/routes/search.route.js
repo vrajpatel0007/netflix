@@ -1,5 +1,5 @@
 import express from "express";
-import { searchPerson ,searchMovie ,searchTv } from "../controllers/serch.controller";
+import { searchPerson ,searchMovie ,searchTv } from "../controllers/serch.controller.js";
 const router = express.Router()
 
 router.get("/person", searchPerson);
